@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Nexus project - Shophowell
+## Tech Stack for Nexus Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Front-End
 
-## Available Scripts
+- React: A popular JavaScript library for building user interfaces. It allows for the creation of reusable UI components and promotes a declarative programming style.
+- Redux: A predictable state container for JavaScript apps. It helps manage and update the state of an application in a more organized and efficient way.
+- React Router: A routing library for React applications. It helps navigate between different pages or components in a single-page application.
+- Axios: A JavaScript library for making HTTP requests from the browser. It provides an easy-to-use interface for requesting and handling data from a server.
+- Styled Components: A CSS-in-JS library that allows you to write CSS styles directly in your JavaScript code. It provides a more modular and maintainable way to style your components.
+- Framer Motion: A motion library for React that allows you to create animations and transitions for your UI components. It provides a simple and intuitive API for creating complex animations.
 
-In the project directory, you can run:
+### Back-End
 
-### `npm start`
+- Firebase Authentication: A service that provides an easy way to authenticate users to your application. It supports various authentication methods such as email and password, Google, Facebook, and more.
+- Firebase Cloud Firestore: A NoSQL document database that allows you to store and sync data in real-time. It provides a simple and scalable way to store and retrieve data for your application.
+- Firebase Cloud Functions: A serverless platform that allows you to run backend code in response to events triggered by Firebase features and HTTPS requests. It provides a flexible and scalable way to extend your application functionality.
+- Firebase Storage: A service that allows you to store and serve user-generated content such as images, videos, and audio files. It provides a secure and scalable way to store and retrieve files for your application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Additional Libraries/Frameworks/Tools
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Stripe API for Payment Processing: A set of APIs that allows you to accept and process payments online. It provides a simple and secure way to handle online transactions.
+- Cloudinary for Image and Video Management: A cloud-based image and video management platform that provides a simple way to upload, store, and manipulate media assets. It provides a scalable and performant way to manage media content.
+- Express.js for Server-Side Rendering: A Node.js web application framework that allows you to build server-side rendered web applications. It provides a flexible and modular way to build web applications.
+- Axios for API Requests: A JavaScript library for making HTTP requests from the browser. It provides an easy-to-use interface for requesting and handling data from a server.
+- JWT for Security and Authorization: JSON Web Tokens (JWT) are a secure way to transmit information between parties. It allows you to securely transmit user data and authenticate users in your application.
+- Material UI for UI Design: A popular React UI framework that provides a set of pre-built components and styles for building responsive and accessible user interfaces. It provides a consistent and scalable way to design UI components.
