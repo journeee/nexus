@@ -1,9 +1,11 @@
 import './App.css';
 
+// pages
+import LandingPage from './pages/LandingPage/LandingPage';
 function App() {
   return (
     <div className="App">
-      <h1>Nexus app</h1>
+      <LandingPage />
     </div>
   );
 }
