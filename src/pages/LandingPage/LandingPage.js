@@ -1,14 +1,114 @@
 import './LandingPage.css';
 import { Button } from "@mui/material";
+import styled from "styled-components";
+import shophowellLandingPageBackground from '../../images/shophowell_landing_page_bg.png';
 
+const LandingPageContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+  background-image: url(${shophowellLandingPageBackground});
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+`
+
+const Navbar = styled.div`
+  width: 12.5%;
+  border-radius: 0px 25px 25px 0px;
+  background: linear-gradient(180deg, #0F3460 0%, #1A1A2E 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7.5%;
+`
+
+const Blur = styled.div`
+  width: 50%;
+  border-radius: 0px 0px 0px 10px;
+  background: rgba(24, 24, 24, 0.30);
+  backdrop-filter: blur(6px);
+  display: flex;
+`
+
+const Filler = styled.div`
+  width: 50%;
+`
+
+const NexusLogo = styled.div`
+    margin-top: 25px;
+`
+
+const Line = styled.hr`
+    opacity: 0.20000000298023224;
+    background: #F8F8F8;
+    width: 67px;
+`
+
+
+const Logo6 = styled.div`
+    margin-top: auto;
+    margin-bottom: 40px;
+`
+
+const Content = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+`
+
+const Intro = styled.p`
+    color: #F8F8F8;
+    text-align: center;
+    font-family: Montserrat, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+`
+
+const SubIntro = styled.p`
+    color: #F8F8F8;
+    text-align: center;
+    font-family: Montserrat, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; /* 104.167% */
+`
+
+const LandingButton = styled.div`
+    border-radius: 70px;
+    background: #FF236B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 315px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+const Text = styled.span`
+    color: #F8F8F8;
+    text-align: center;
+    font-family: Montserrat, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 83.333% */
+`
 
 // components
 function LandingPage() {
     return (
-        <div className="LandingPage">
-            <div className="blur">
-                <div className="navbar">
-                    <div className="nexus-logo">
+        <LandingPageContainer>
+            <Blur>
+                <Navbar>
+                    <NexusLogo>
                         <svg xmlns="http://www.w3.org/2000/svg" width="59" height="58" viewBox="0 0 59 58" fill="none">
                             <path d="M8.27615 14.5913L21.3326 35.3107L6.64355 49.8644H17.1362L24.6928 40.6435L34.7113 56.5414H41.6439L15.2093 14.5913H8.27615Z" fill="white"/>
                             <path d="M55.5785 1.4585L27.3057 29.4999L29.935 33.6174L55.5785 1.4585Z" fill="white"/>
@@ -17,8 +117,8 @@ function LandingPage() {
                             <path d="M31.5879 14.8189C29.0982 16.1315 26.6128 17.451 24.1188 18.7678C24.1123 18.7624 24.1048 18.7576 24.0978 18.7527C23.8035 18.5326 23.534 18.2791 23.2971 17.9928C23.0888 17.7474 22.9008 17.4735 22.745 17.1798C21.9567 15.6922 22.0421 13.9758 22.8267 12.6192C23.252 11.8878 23.8809 11.2584 24.6902 10.8298C25.1112 10.6091 25.5478 10.4539 25.9936 10.3685C26.1407 10.3401 26.283 10.3154 26.4307 10.303C26.6063 10.2869 26.782 10.2783 26.9533 10.2826H26.9597C25.6118 11.3615 24.4888 12.7175 23.6838 14.2449C23.2998 14.9763 23.0055 15.9285 23.5205 16.574C23.8513 16.9827 24.4313 17.1255 24.9507 17.0557C25.4732 16.9821 25.9479 16.7287 26.4055 16.4676C28.1117 15.4757 29.6905 14.2636 31.0868 12.8733C31.3999 13.4887 31.5847 14.1407 31.5874 14.7937C31.5874 14.8189 31.5879 14.8189 31.5874 14.8195L31.5879 14.8189Z" fill="white"/>
                             <path d="M31.5512 15.5703C31.3638 17.0343 30.4954 18.3817 29.0953 19.1239C28.4047 19.4918 27.6609 19.6674 26.9332 19.676C26.3978 19.6803 25.8629 19.5895 25.3613 19.4133C27.5981 18.4553 29.6941 17.1546 31.5512 15.5703Z" fill="white"/>
                         </svg>
-                    </div>
-                    <hr className="line"/>
+                    </NexusLogo>
+                    <Line/>
                     <Button>
                     <div className="logo-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
@@ -55,16 +155,16 @@ function LandingPage() {
                     </div>
                     </Button>
 
-                    <div className="logo-6">
+                    <Logo6>
                         <Button>
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                             <path d="M22.5596 13.6228C22.3634 13.4025 22.2552 13.1192 22.2552 12.826C22.2552 12.5327 22.3634 12.2495 22.5596 12.0291L24.1263 10.2906C24.299 10.1006 24.4062 9.86161 24.4325 9.60783C24.4589 9.35405 24.4031 9.09855 24.2732 8.87799L21.8252 4.70061C21.6966 4.48029 21.5007 4.30566 21.2655 4.2016C21.0304 4.09754 20.7679 4.06936 20.5155 4.12109L18.2144 4.57987C17.9216 4.63955 17.6168 4.59145 17.3575 4.44465C17.0982 4.29785 16.9023 4.06251 16.8069 3.78303L16.0602 1.57361C15.9781 1.3338 15.8217 1.12552 15.613 0.978199C15.4044 0.830877 15.154 0.751965 14.8974 0.752618H10.0015C9.73456 0.738877 9.47043 0.811689 9.24941 0.959935C9.02839 1.10818 8.86265 1.32371 8.77748 1.57361L8.09205 3.78303C7.99658 4.06251 7.8007 4.29785 7.54139 4.44465C7.28208 4.59145 6.97726 4.63955 6.68446 4.57987L4.32216 4.12109C4.08293 4.08774 3.83905 4.12498 3.62124 4.2281C3.40343 4.33123 3.22143 4.49564 3.09817 4.70061L0.650192 8.87799C0.516973 9.09609 0.457073 9.35016 0.479057 9.60387C0.50104 9.85757 0.603781 10.0979 0.772591 10.2906L2.32706 12.0291C2.52329 12.2495 2.63151 12.5327 2.63151 12.826C2.63151 13.1192 2.52329 13.4025 2.32706 13.6228L0.772591 15.3614C0.603781 15.554 0.50104 15.7944 0.479057 16.0481C0.457073 16.3018 0.516973 16.5559 0.650192 16.774L3.09817 20.9513C3.22681 21.1717 3.42267 21.3463 3.65784 21.4504C3.89301 21.5544 4.15548 21.5826 4.40784 21.5309L6.70894 21.0721C7.00174 21.0124 7.30656 21.0605 7.56587 21.2073C7.82518 21.3541 8.02106 21.5894 8.11653 21.8689L8.86316 24.0783C8.94833 24.3282 9.11407 24.5438 9.33509 24.692C9.55611 24.8403 9.82024 24.9131 10.0872 24.8993H14.9831C15.2397 24.9 15.49 24.8211 15.6987 24.6738C15.9073 24.5264 16.0638 24.3181 16.1459 24.0783L16.8925 21.8689C16.988 21.5894 17.1839 21.3541 17.4432 21.2073C17.7025 21.0605 18.0073 21.0124 18.3001 21.0721L20.6012 21.5309C20.8536 21.5826 21.116 21.5544 21.3512 21.4504C21.5864 21.3463 21.7823 21.1717 21.9109 20.9513L24.3589 16.774C24.4888 16.5534 24.5446 16.2979 24.5182 16.0441C24.4918 15.7903 24.3846 15.5513 24.212 15.3614L22.5596 13.6228ZM20.7359 15.2406L21.715 16.3273L20.1483 19.0075L18.704 18.7178C17.8225 18.54 16.9055 18.6877 16.127 19.1329C15.3486 19.578 14.763 20.2895 14.4813 21.1324L14.0162 22.4847H10.8827L10.4421 21.1083C10.1604 20.2654 9.57477 19.5538 8.79634 19.1087C8.01791 18.6636 7.10089 18.5159 6.21934 18.6936L4.77504 18.9834L3.18385 16.3152L4.16304 15.2286C4.76519 14.5645 5.09809 13.7048 5.09809 12.8139C5.09809 11.923 4.76519 11.0633 4.16304 10.3992L3.18385 9.31263L4.75056 6.65649L6.19486 6.94625C7.07641 7.124 7.99343 6.97629 8.77186 6.53117C9.55029 6.08604 10.1359 5.37449 10.4176 4.53158L10.8827 3.16729H14.0162L14.4813 4.54365C14.763 5.38656 15.3486 6.09812 16.127 6.54324C16.9055 6.98836 17.8225 7.13607 18.704 6.95832L20.1483 6.66856L21.715 9.34885L20.7359 10.4355C20.1405 11.098 19.8117 11.9527 19.8117 12.8381C19.8117 13.7234 20.1405 14.5781 20.7359 15.2406ZM12.4495 7.99663C11.4811 7.99663 10.5345 8.27987 9.7294 8.81052C8.92426 9.34118 8.29674 10.0954 7.92617 10.9779C7.55561 11.8603 7.45865 12.8313 7.64757 13.7681C7.83648 14.7049 8.30277 15.5654 8.98748 16.2408C9.6722 16.9162 10.5446 17.3762 11.4943 17.5625C12.444 17.7489 13.4284 17.6532 14.3231 17.2877C15.2177 16.9222 15.9823 16.3032 16.5203 15.509C17.0583 14.7148 17.3454 13.7811 17.3454 12.826C17.3454 11.5452 16.8296 10.3168 15.9114 9.41111C14.9932 8.50544 13.7479 7.99663 12.4495 7.99663ZM12.4495 15.2406C11.9653 15.2406 11.492 15.099 11.0894 14.8337C10.6869 14.5684 10.3731 14.1913 10.1878 13.75C10.0025 13.3088 9.95405 12.8233 10.0485 12.3549C10.143 11.8865 10.3761 11.4562 10.7185 11.1185C11.0608 10.7808 11.497 10.5509 11.9719 10.4577C12.4467 10.3645 12.9389 10.4123 13.3863 10.5951C13.8336 10.7779 14.2159 11.0874 14.4849 11.4845C14.7539 11.8815 14.8974 12.3484 14.8974 12.826C14.8974 13.4664 14.6395 14.0806 14.1804 14.5334C13.7213 14.9862 13.0987 15.2406 12.4495 15.2406Z" fill="#F8F8F8"/>
                         </svg>
                         </Button>
-                    </div>
+                    </Logo6>
 
-                </div>
-                <div className="content">
+                </Navbar>
+                <Content>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="243" height="83" viewBox="0 0 243 83" fill="none">
                             <g filter="url(#filter0_d_57_1957)">
@@ -106,19 +206,18 @@ function LandingPage() {
                             </defs>
                         </svg>
                     </div>
-                    <p className="intro">Welcome To The Nexus!</p>
-                    <p className="sub-intro">Let’s see where you are in your e-commerce journey!</p>
+                    <Intro>Welcome To The Nexus!</Intro>
+                    <SubIntro>Let’s see where you are in your e-commerce journey!</SubIntro>
                     <Button color="secondary">
-                    <div className="landing-button">
-                        <span className="text">Start Now</span>
-                    </div>
+                    <LandingButton>
+                        <Text>Start Now</Text>
+                    </LandingButton>
                     </Button>
-                </div>
-            </div>
-            <div className="filler">
-
-            </div>
-        </div>
+                </Content>
+            </Blur>
+            <Filler>
+            </ Filler>
+        </LandingPageContainer>
     );
 }
 
