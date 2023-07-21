@@ -1,0 +1,172 @@
+.container {
+    display: grid;
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    grid-template-columns: 0.6fr 4.5fr 4.5fr;
+    grid-template-rows: 1fr 9fr;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    z-index: 1;
+    border-radius: 0px 25px 25px 0px;
+    background: linear-gradient(180deg, #0F3460 0%, #1A1A2E 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: #039be5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    background-image: url("../../../../images/shophowell_homepage_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    grid-column-start: 3;
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 0px 10px;
+    background: rgba(24, 24, 24, 0.30);
+    backdrop-filter: blur(6px);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+
+.nexus-logo {
+    margin-top: 12.5px;
+}
+
+.line {
+    opacity: 0.20000000298023224;
+    background: #F8F8F8;
+    width: 67px;
+    margin-top: 8px;
+}
+
+.icons-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.setting {
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.user-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    background: red, lightgray 50% / cover no-repeat;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.search-input {
+    border-radius: 59px;
+    background: rgba(248, 248, 248, 0.25);
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.25);
+    width: 60%;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.input-box {
+    margin-left: 5px;
+    width: 90%;
+    border: none transparent;
+    outline: none;
+    color: rgba(26, 26, 46, 0.25);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.content {
+    z-index: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.first-content {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px; /* 96.875% */
+    margin: 10px;
+    padding-left: 25px;
+}
+
+.second-content {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34.5px; /* 143.75% */
+    margin: 10px;
+    padding-left: 25px;
+}
+
+.course-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 315px;
+    height: 48px;
+    border-radius: 70px;
+    background: #FF236B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #F8F8F8;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 83.333% */
+    margin: 10px;
+}
+

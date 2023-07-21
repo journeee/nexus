@@ -2,6 +2,7 @@ import './LandingPage.css';
 import { Button } from "@mui/material";
 import styled from "styled-components";
 import shophowellLandingPageBackground from '../../images/shophowell_landing_page_bg.png';
+import { Link } from 'react-router-dom';
 
 const LandingPageContainer = styled.div`
   width: 100%;
@@ -209,9 +210,10 @@ function LandingPage() {
                     <Intro>Welcome To The Nexus!</Intro>
                     <SubIntro>Let’s see where you are in your e-commerce journey!</SubIntro>
                     <Button color="secondary">
-                    <LandingButton>
+                    <Link to="/home" style={{ textDecoration: 'none' }}><LandingButton>
                         <Text>Start Now</Text>
                     </LandingButton>
+                    </Link>
                     </Button>
                 </Content>
             </Blur>
