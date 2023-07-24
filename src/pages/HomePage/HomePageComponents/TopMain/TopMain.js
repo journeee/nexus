@@ -1,6 +1,8 @@
 import './TopMain.css'
 import { Button } from "@mui/material";
 
+import { motion } from "framer-motion"
+
 function TopMain() {
     return (
         <div className="container">
@@ -73,13 +75,15 @@ function TopMain() {
                 </div>
             </div>
             <div className="blur"></div>
-            <div className="content">
+            <motion.div initial={{ opacity:0 }}
+                        animate={{ opacity:1 }}
+                        transition={{ duration: 1, delay: 0.1 }} className="content">
                 <p className="first-content">Skyrocket Your Business Growth</p>
                 <p className="second-content">Welcome to our Amazon and e-commerce courses! Our courses are designed to teach you everything you need to know to succeed as a seller on Amazon or any other e-commerce platform.</p>
                 <Button color="secondary">
                     <div className="course-button">Check Our Courses</div>
                 </Button>
-            </div>
+            </motion.div>
         </div>
     );
 }
