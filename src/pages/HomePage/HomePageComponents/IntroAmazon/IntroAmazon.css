@@ -1,0 +1,86 @@
+.intro-amazon {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-image: url("../../../../images/Fondos Home-05 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+}
+
+.intro-amazon-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px;
+}
+
+.intro-text {
+    color: #F8F8F8;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px; /* 129.167% */
+}
+
+.intro-sub-1 {
+    color: #F8F8F8;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34.5px; /* 143.75% */
+    text-align: start;
+}
+
+.intro-sub-2 {
+    color: #F8F8F8;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34.5px;
+}
+
+.intro-amazon-enroll-button {
+    align-self: center;
+    color: #F8F8F8;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34.5px;
+    width: 315px;
+    height: 58px;
+    border-radius: 70px;
+    background: #FF236B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-amazon-video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-text {
+    color: #F8F8F8;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 83.333% */
+}
