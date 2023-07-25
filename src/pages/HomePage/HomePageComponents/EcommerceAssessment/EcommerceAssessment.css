@@ -1,24 +1,31 @@
-.intro-amazon {
-    display: flex;
-    width: 100%;
-    height: 900px;
-    background-image: url("../../../../images/IntroAmazonBG.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: space-around;
-}
-
-.intro-amazon-text-container {
+.ecommerce-assessment {
     display: flex;
     flex-direction: column;
-    width: 50%;
     justify-content: center;
-    gap: 35px;
-    padding: 25px;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    height: 900px;
+    background-image: url("../../../../images/EcommerceAssessmentBG.png");
+    background-color: rgba(0,0,0,0.25);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 200px;
 }
 
-.intro-text {
+.ecommerce-assessment-title {
     color: #F8F8F8;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+}
+
+.red-span {
+    color: #E01D59;
+    text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Montserrat;
     font-size: 48px;
@@ -27,54 +34,41 @@
     line-height: 62px; /* 129.167% */
 }
 
-.intro-sub-1 {
+.ecommerce-assessment-sub {
+    color: #F8F8F8;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29.5px; /* 122.917% */
+}
+
+.ecommerce-assessment-sub-2 {
     color: #F8F8F8;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 34.5px; /* 143.75% */
-    text-align: start;
+    line-height: 29.5px;
 }
 
-.intro-sub-2 {
-    color: #F8F8F8;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 34.5px;
-}
-
-.intro-amazon-enroll-button {
-    align-self: center;
-    color: #F8F8F8;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 34.5px;
-    width: 315px;
-    height: 58px;
+.ecommerce-assessment-button {
     border-radius: 70px;
     background: #FF236B;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 348px;
+    height: 70px;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
 }
 
-.intro-amazon-video-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.button-text {
+.text-button {
     color: #F8F8F8;
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -83,4 +77,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: 20px; /* 83.333% */
+}
+
+.ecommerce-assessment-bg {
+    width: 100%;
+    height: 900px;
+    background-image: url("../../../../images/shutterstock_1613914207 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }

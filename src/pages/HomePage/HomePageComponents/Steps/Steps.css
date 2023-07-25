@@ -1,0 +1,66 @@
+.steps {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 65px;
+}
+
+.steps-title {
+    color: #E01D59;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56.5px; /* 117.708% */
+}
+
+.steps-processes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+}
+
+.process {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.process-desc {
+    color: #1A1A2E;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38.5px; /* 113.235% */
+    max-width: 400px;
+}
+
+.process-image-1 {
+    width: 169px;
+    height: 179px;
+    background-image: url("../../../../images/Asset 71@4x 1.png");
+}
+
+.process-image-2 {
+    width: 169px;
+    height: 179px;
+    background-image: url("../../../../images/Asset 72@4x 1.png");
+}
+
+.process-image-3 {
+    width: 169px;
+    height: 179px;
+    background-image: url("../../../../images/Asset 73@4x 1.png");
+}
