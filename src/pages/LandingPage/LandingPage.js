@@ -108,8 +108,8 @@ const Text = styled.span`
 function LandingPage() {
     return (
         <LandingPageContainer>
-            <Blur as={motion.div} initial={{opacity: 0 }} animate={{opacity: 1}} transition={{duration: 1.3}}>
-                <Navbar as={motion.div} initial={{x: "-100px"}} animate={{x: 0}} transition={{ duration: 0.8, ease: "easeInOut" }}>
+            <Blur as={motion.div} initial={{opacity: 0 }} animate={{opacity: 1}} transition={{duration: 1.3, delay: 0.2}}>
+                <Navbar as={motion.div} initial={{x: "-100px"}} animate={{x: 0}} transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}>
                     <NexusLogo >
                         <svg xmlns="http://www.w3.org/2000/svg" width="59" height="58" viewBox="0 0 59 58" fill="none">
                             <path d="M8.27615 14.5913L21.3326 35.3107L6.64355 49.8644H17.1362L24.6928 40.6435L34.7113 56.5414H41.6439L15.2093 14.5913H8.27615Z" fill="white"/>
@@ -167,7 +167,7 @@ function LandingPage() {
 
                 </Navbar>
                 <Content>
-                    <motion.div initial={{y: "-100px", opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 1}}>
+                    <motion.div initial={{y: "-100px", opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 1, delay: 0.2}}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="243" height="83" viewBox="0 0 243 83" fill="none">
                             <g filter="url(#filter0_d_57_1957)">
                                 <path d="M23.4693 52.1909H23.3163L15.1994 20.0688H4.73079V73.733H12.1667V34.5566H12.3168L22.3295 73.733H30.9023V20.0688H23.4693V52.1909Z" fill="white"/>
@@ -208,9 +208,9 @@ function LandingPage() {
                             </defs>
                         </svg>
                     </motion.div>
-                    <Intro as={motion.p} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1.55}}>Welcome To The Nexus!</Intro>
-                    <SubIntro as={motion.p} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1.7}}>Let’s see where you are in your e-commerce journey!</SubIntro>
-                    <Button color="secondary" as={motion.div} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1.9}}>
+                    <Intro as={motion.p} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1.55, delay: 0.2}}>Welcome To The Nexus!</Intro>
+                    <SubIntro as={motion.p} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1.7, delay: 0.2}}>Let’s see where you are in your e-commerce journey!</SubIntro>
+                    <Button color="secondary" as={motion.div} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1.9, delay: 0.2}}>
                     <Link to="/home" style={{ textDecoration: 'none' }}><LandingButton>
                         <Text>Start Now</Text>
                     </LandingButton>
