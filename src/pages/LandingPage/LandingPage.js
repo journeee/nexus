@@ -233,8 +233,8 @@ function LandingPage() {
                     <Intro as={motion.p} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1.55, delay: 0.2}}>Welcome To The Nexus!</Intro>
                     <SubIntro as={motion.p} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1.7, delay: 0.2}}>Let’s see where you are in your e-commerce journey!</SubIntro>
                     <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1.9, delay: 0.2}}>
-                    <Link to="/home" style={{ textDecoration: 'none' }}><LandingButton as={motion.div} whileHover={{background: "#fff"}}>
-                        <Text as={motion.p} whileHover={{ color: "#FF236B" }}>Start Now</Text>
+                    <Link to="/home" style={{ textDecoration: 'none' }}><LandingButton as={motion.div} initial={{background: "#FF236B"}} whileHover={{background: "#fff"}}>
+                        <Text as={motion.p} initial={{color: "#fff"}} whileHover={{ color: "#FF236B" }}>Start Now</Text>
                     </LandingButton>
                     </Link>
                     </motion.div>

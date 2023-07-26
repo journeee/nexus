@@ -30,3 +30,17 @@
     flex-direction: column;
     overflow-x: hidden;
 }
+
+.icon-button:hover {
+    background-color: red;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-button:hover .icon-svg .icon-path {
+    fill: "green";
+}

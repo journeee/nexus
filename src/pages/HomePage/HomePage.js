@@ -11,7 +11,7 @@ import HomePageFooter from "./HomePageComponents/HomePageFooter/HomePageFooter";
 
 import { Button } from "@mui/material";
 
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const svgVariants = {
     hidden: {

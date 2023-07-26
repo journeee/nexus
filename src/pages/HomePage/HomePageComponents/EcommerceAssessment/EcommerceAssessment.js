@@ -13,7 +13,7 @@ function EcommerceAssessment() {
 
                 </motion.p>
             <motion.p initial={{opacity: 0, x: "-500px"}} whileInView={{ opacity: 1, x: 0 }} transition={{duration: 3, delay: 0.2}} className="ecommerce-assessment-sub-2">Meanwhile we offer you a full range of courses about how to start and scale on Amazon.</motion.p>
-            <motion.div initial={{opacity: 0, y: "100px"}} whileHover={{background: "#fff", cursor: "pointer"}} whileInView={{ opacity: 1, y: 0 }} transition={{duration: 1, delay: 0.2}} className="ecommerce-assessment-button"><motion.span whileHover={{color: "#FF236B"}} className="text-button">Go to Our Courses</motion.span></motion.div>
+            <motion.div initial={{opacity: 0, y: "100px", background: "#FF236B"}} whileHover={{background: "#fff", cursor: "pointer"}} whileInView={{ opacity: 1, y: 0 }} transition={{duration: 1, delay: 0.2}} className="ecommerce-assessment-button"><motion.span initial={{color: "#fff"}} whileHover={{color: "#FF236B"}} className="text-button">Go to Our Courses</motion.span></motion.div>
         </div>
         </div>
     );
