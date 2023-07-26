@@ -1,9 +1,10 @@
 .service-container {
     display: flex;
     max-height: 800px;
-    width: 100%;
+    width: 95%;
     justify-content: space-around;
     padding: 30px;
+    padding-left: 100px;
 }
 
 .services {
