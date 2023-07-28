@@ -105,7 +105,7 @@ function TopMain() {
                         animate={{ opacity:1 }}
                         transition={{ duration: 1, delay: 0.1 }} className="content">
                 <p className="first-content">Skyrocket Your Business Growth</p>
-                <p className="second-content">Welcome to our Amazon and e-commerce courses! Our courses are designed to teach you everything you need to know to succeed as a seller on Amazon or any other e-commerce platform.</p>
+                <p className="second-content">Welcome to our Amazon and <span>e-commerce</span> courses! Our courses are designed to teach you everything you need to know to succeed as a seller on Amazon or any other <span>e-commerce</span> platform.</p>
                 <Button color="secondary">
                     <motion.div initial={{background: "#FF236B", color: "#fff"}} whileHover={{background: "#fff", color: "#FF236B"}} className="course-button">Check Our Courses</motion.div>
                 </Button>
