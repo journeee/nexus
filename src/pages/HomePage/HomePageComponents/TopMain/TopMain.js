@@ -1,6 +1,6 @@
 import './TopMain.css'
 import { Button } from "@mui/material";
-
+import {Link} from 'react-router-dom';
 import { motion } from "framer-motion"
 
 const svgVariants = {
@@ -106,9 +106,10 @@ function TopMain() {
                         transition={{ duration: 1, delay: 0.1 }} className="content">
                 <p className="first-content">Skyrocket Your Business Growth</p>
                 <p className="second-content">Welcome to our Amazon and <span>e-commerce</span> courses! Our courses are designed to teach you everything you need to know to succeed as a seller on Amazon or any other <span>e-commerce</span> platform.</p>
-                <Button color="secondary">
+                <Link to="/signup" style={{textDecoration: 'none'}}><Button color="secondary">
                     <motion.div initial={{background: "#FF236B", color: "#fff"}} whileHover={{background: "#fff", color: "#FF236B"}} className="course-button">Check Our Courses</motion.div>
                 </Button>
+                </Link>
             </motion.div>
         </div>
         </div>
