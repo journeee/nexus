@@ -1,6 +1,7 @@
 import './Signup.css';
 import {motion} from "framer-motion";
 import {useState} from "react";
+import {Link} from 'react-router-dom';
 
 import Navbar from '../../UniversalComponents/Navbar';
 
@@ -77,7 +78,7 @@ function Signup() {
                         </div>
                         <motion.div initial={{background: "#FF236B"}}
                                     whileHover={{background: "#fff"}} className="signup-button"><motion.span initial={{color: "#fff"}} whileHover={{color: "#FF236B"}} className="signup-button-text">CREATE ACCOUNT</motion.span></motion.div>
-                        <p className="tosignin">Already have an account? <span className="signin-link">Sign In</span></p>
+                        <p className="tosignin">Already have an account? <Link to="/signin" style={{textDecoration: 'none'}}><span className="signin-link">Sign In</span></Link></p>
 
                     </motion.div>
 

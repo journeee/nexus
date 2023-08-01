@@ -1,0 +1,24 @@
+.signin-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.signin-image {
+    background-image: url("../../images/Asset 149@4x 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 108px;
+    height: 91px;
+}
+
+.signin-title {
+    color: #FF236B;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
