@@ -1,0 +1,170 @@
+.app-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.app-1 {
+    border-radius: 45px;
+    background: linear-gradient(213deg, #E01D59 0%, #1A1A2E 100%);
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.25);
+    width: 95%;
+    height: 400px;
+    align-self: center;
+    margin-top: 50px;
+}
+
+.app-1-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 55%;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.app-1-image {
+    background-image: url("../../../../images/Asset 149@4x 2.png");
+    width: 45%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-bottom-right-radius: 45px;
+}
+
+.app-1-content-text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.app-1-content-sub-text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.app-1-button {
+    border-radius: 70px;
+    background: #FF236B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 200px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.app-1-button-text {
+    color: #F8F8F8;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.star-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../../images/stars2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.search-app {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    grid-column-start: 3;
+}
+
+.search-input-app {
+    border-radius: 59px;
+    background: rgba(248, 248, 248, 0.25);
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.25);
+    width: 60%;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.sub-apps {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+}
+
+.app-2 {
+    width: 50%;
+    height: 100%;
+    background-image: url("../../../../images/app-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sub-app-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.app-3 {
+    width: 50%;
+    height: 100%;
+    background-image: url("../../../../images/app-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.app-title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 32px */
+}
+
+.app-sub-title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 16px */
+    width: 60%;
+}

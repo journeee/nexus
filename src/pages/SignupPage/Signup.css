@@ -126,6 +126,7 @@
     font-weight: 700;
     line-height: normal;
     cursor: pointer;
+    max-width: 60%;
 }
 
 .signup-button {

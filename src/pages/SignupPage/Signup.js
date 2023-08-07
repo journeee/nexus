@@ -1,7 +1,7 @@
 import './Signup.css';
 import {motion} from "framer-motion";
 import {useState} from "react";
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 
 import Navbar from '../../UniversalComponents/Navbar';
 
@@ -10,6 +10,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import firebase from '../../firebase';
 
 function Signup() {
+    const navigate = useNavigate();
     const auth = getAuth();
 
     const [passwordVisibility, setPasswordVisibility] = useState('password');
@@ -40,6 +41,7 @@ function Signup() {
             createUserWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
                     const user = userCredential.user;
+                    navigate('/dashboard');
                 })
                 .catch((error) => {
                     const errorMessage = error.message;

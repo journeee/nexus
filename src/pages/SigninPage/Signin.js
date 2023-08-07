@@ -1,7 +1,7 @@
 import './Signin.css';
 import {motion} from "framer-motion";
 import {useState} from "react";
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 
 import Navbar from '../../UniversalComponents/Navbar';
 
@@ -9,6 +9,7 @@ import firebase from '../../firebase';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 function Signin() {
+    const navigate = useNavigate();
     const auth = getAuth()
 
     const [passwordVisibility, setPasswordVisibility] = useState('password');
@@ -27,6 +28,7 @@ function Signin() {
             signInWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
                     const user = userCredential.user;
+                    navigate('/dashboard')
                 })
                 .catch((error) => {
                     // const errorCode = error.code;
