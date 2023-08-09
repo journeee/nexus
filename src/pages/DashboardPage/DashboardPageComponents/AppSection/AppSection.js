@@ -1,7 +1,10 @@
 import './AppSection.css';
 import {Button} from "@mui/material";
+import {motion} from 'framer-motion';
+import {useState} from 'react';
 
 function AppSection() {
+
     return (
         <div className="app-section">
 
@@ -27,25 +30,25 @@ function AppSection() {
                 <div className="user-logo">
                 </div>
             </div>
-            <div className="app-1">
+            <motion.div initial={{y: -100, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 1.5, delay: 0.2}} className="app-1">
                 <div className="star-bg">
                     <div className="app-1-content">
                         <p className="app-1-content-text">Take Our <span>E-Commerce</span> Readiness Assessment</p>
                         <p className="app-1-content-sub-text">Our E-commerce readiness assessment evaluates a business's ability to establish an online presence, identify areas for improvement and develop a plan for success.</p>
-                        <div className="app-1-button"><span className="app-1-button-text">Start Now</span></div>
+                        <motion.div initial={{background: "#FF236B"}} whileHover={{background: "#fff"}} className="app-1-button"><motion.span initial={{color: "#fff"}} whileHover={{color: "#FF236B"}} className="app-1-button-text">Start Now</motion.span></motion.div>
                     </div>
                     <div className="app-1-image"></div>
                 </div>
-            </div>
+            </motion.div>
             <div className="sub-apps">
-                <div className="app-2">
+                <motion.div initial={{y: 120, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 2, delay: 0.3}} className="app-2">
                     <p className="app-title">Check Your
                         Journal</p>
                     <div className="sub-app-content">
                         <p className="app-sub-title">Our Nexus User Journal page helps online sellers track their business activities, course progression and business state.</p>
-                        <svg style={{cursor: "pointer"}} xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <svg  style={{cursor: "pointer"}} xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
                             <g filter="url(#filter0_d_90_570)">
-                                <circle cx="30" cy="30" r="20" fill="#F8F8F8"/>
+                                <motion.circle initial={{fill: "#F8F8F8"}} whileHover={{fill: "#FF236B"}} cx="30" cy="30" r="20" fill="#F8F8F8" />
                             </g>
                             <path d="M35.3667 26.9667L25.0125 37.35C24.7792 37.5833 24.5019 37.7 24.1807 37.7C23.8594 37.7 23.5826 37.5833 23.35 37.35C23.1167 37.1167 23 36.8394 23 36.5182C23 36.1969 23.1167 35.9201 23.35 35.6875L33.7333 25.3333H24.8667C24.5361 25.3333 24.2588 25.2213 24.0348 24.9973C23.8108 24.7733 23.6992 24.4964 23.7 24.1667C23.7 23.8361 23.812 23.5588 24.036 23.3348C24.26 23.1108 24.5369 22.9992 24.8667 23H36.5333C36.8639 23 37.1412 23.112 37.3652 23.336C37.5892 23.56 37.7008 23.8369 37.7 24.1667V35.8333C37.7 36.1639 37.588 36.4412 37.364 36.6652C37.14 36.8892 36.8631 37.0008 36.5333 37C36.2028 37 35.9255 36.888 35.7015 36.664C35.4775 36.44 35.3659 36.1631 35.3667 35.8333V26.9667Z" fill="#1A1A2E"/>
                             <defs>
@@ -63,17 +66,17 @@ function AppSection() {
                             </defs>
                         </svg>
                     </div>
-                </div>
-                <div className="app-3">
-                    <p className="app-title">Check Your
-                        Journal</p>
+                </motion.div>
+                <motion.div initial={{y: 120, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 2, delay: 0.5}} className="app-3">
+                    <p className="app-title">Find Support
+                        In Our Directory</p>
                     <div className="sub-app-content">
                         <p className="app-sub-title">Our Nexus User Journal page helps online sellers track their business activities, course progression and business state.</p>
                         <svg style={{cursor: "pointer"}} xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
                             <g filter="url(#filter0_d_90_570)">
-                                <circle cx="30" cy="30" r="20" fill="#F8F8F8"/>
+                                <motion.circle initial={{fill: "#F8F8F8"}} whileHover={{fill: "#FF236B"}} cx="30" cy="30" r="20" fill="#F8F8F8"/>
                             </g>
-                            <path d="M35.3667 26.9667L25.0125 37.35C24.7792 37.5833 24.5019 37.7 24.1807 37.7C23.8594 37.7 23.5826 37.5833 23.35 37.35C23.1167 37.1167 23 36.8394 23 36.5182C23 36.1969 23.1167 35.9201 23.35 35.6875L33.7333 25.3333H24.8667C24.5361 25.3333 24.2588 25.2213 24.0348 24.9973C23.8108 24.7733 23.6992 24.4964 23.7 24.1667C23.7 23.8361 23.812 23.5588 24.036 23.3348C24.26 23.1108 24.5369 22.9992 24.8667 23H36.5333C36.8639 23 37.1412 23.112 37.3652 23.336C37.5892 23.56 37.7008 23.8369 37.7 24.1667V35.8333C37.7 36.1639 37.588 36.4412 37.364 36.6652C37.14 36.8892 36.8631 37.0008 36.5333 37C36.2028 37 35.9255 36.888 35.7015 36.664C35.4775 36.44 35.3659 36.1631 35.3667 35.8333V26.9667Z" fill="#1A1A2E"/>
+                            <path  d="M35.3667 26.9667L25.0125 37.35C24.7792 37.5833 24.5019 37.7 24.1807 37.7C23.8594 37.7 23.5826 37.5833 23.35 37.35C23.1167 37.1167 23 36.8394 23 36.5182C23 36.1969 23.1167 35.9201 23.35 35.6875L33.7333 25.3333H24.8667C24.5361 25.3333 24.2588 25.2213 24.0348 24.9973C23.8108 24.7733 23.6992 24.4964 23.7 24.1667C23.7 23.8361 23.812 23.5588 24.036 23.3348C24.26 23.1108 24.5369 22.9992 24.8667 23H36.5333C36.8639 23 37.1412 23.112 37.3652 23.336C37.5892 23.56 37.7008 23.8369 37.7 24.1667V35.8333C37.7 36.1639 37.588 36.4412 37.364 36.6652C37.14 36.8892 36.8631 37.0008 36.5333 37C36.2028 37 35.9255 36.888 35.7015 36.664C35.4775 36.44 35.3659 36.1631 35.3667 35.8333V26.9667Z" fill="#1A1A2E"/>
                             <defs>
                                 <filter id="filter0_d_90_570" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                                     <feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -89,7 +92,7 @@ function AppSection() {
                             </defs>
                         </svg>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     );
