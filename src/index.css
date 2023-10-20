@@ -45,3 +45,14 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
     isolation: isolate;
 }
+
+/* Responsiveness  */
+/* Adjust styles for different screen sizes */
+/* Example: For screens with a maximum width of 768px (typical smartphones) */
+@media (max-width: 768px) {
+  body {
+      font-size: 16px;
+  }
+
+  /* Add specific styles for elements like navigation, images, or layout adjustments here. */
+}
